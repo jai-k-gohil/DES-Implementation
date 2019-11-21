@@ -1,5 +1,10 @@
 package des;
 
+/**
+ * Created by
+ * @author Jai Gohil
+ */
+
 public class Keys{
 		static int[][] PC1 ={
 				{57,49,41,33,25,17,9},

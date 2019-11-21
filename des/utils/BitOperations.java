@@ -1,8 +1,17 @@
 package des.utils;
 
+/**
+ * Created by
+ * @author Jai Gohil
+ */
+
 public class BitOperations
 {
-	//To xor the string and return it ie string is binary
+	/**
+	 * @param s1
+	 * @param s2
+	 * To xor the string and return it ie string is binary
+	 */
 	public static String xor(String s1,String s2){
 		String result ="";
 		int length=Math.min(s1.length(),s2.length());
@@ -16,8 +25,12 @@ public class BitOperations
 	private static boolean bitOf(char in) {return(in=='1'? true:false);}
 	private static char charOf(boolean in) {return (in==true? '1' :'0');}
 
-	/*function that gets values of matrix and a binary string and returns another matrix 
-	that contains all the digits at specified location*/
+	/**
+	 * @param matrix
+	 * @param source
+	 * function that gets values of matrix and a binary string and returns another matrix
+	 * that contains all the digits at specified location
+	 */
 	public static String permute(int[][] matrix,String source){
 		String result="";
 		for (int i=0; i < matrix.length; i++)
@@ -41,7 +54,12 @@ public class BitOperations
 		return new String(output);
 	}
 
-		//function to leftshift which takes string array and its index and how many times left shift has to be performed
+	/**
+	 * @param value
+	 * @param index
+	 * @param times
+	 * function to leftshift which takes string array and its index and how many times left shift has to be performed
+	 */
 	public static String leftShift(String[] value,int index,int times){
 		char[] stringarray=new char[value[index].length()];
 		value[index].getChars(0,value[index].length(),stringarray,0);

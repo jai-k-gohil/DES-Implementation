@@ -1,5 +1,10 @@
 package des.utils;
 
+/**
+ * Created by
+ * @author Jai Gohil
+ */
+
 public class StringOperations{
 	
     //both the function work the same as indexOf function
@@ -61,15 +66,27 @@ public class StringOperations{
     	part2=source.substring((startindex+(len/2)+1),endindex);
     }
 
-	/*split binary into two parts C and D accepts source and two destination string 
-	array to store at specifed index */
+
+	/**
+	 * @param source
+	 * @param part1
+	 * @param part2
+	 * @param index
+	 * split binary into two parts C and D accepts source and two destination string
+	 * 	array to store at specifed index
+	 */
 	public static void splitHalf(String source,String[] part1,String[] part2,int index){
 				int len = source.length();
 				part1[index]=source.substring(0,(len/2));
 				part2[index]=source.substring((len/2));
 	}
 
-	//this is requires to make input string of desired length if not passed appropriately
+	/**
+	 * @param source
+	 * @param topad
+	 * @param length
+	 * this is requires to make input string of desired length if not passed appropriately
+	 */
 	public static void padding(String source ,String topad,int len){
 			String padded=source;
 			for(int i=source.length(); i<len; i++)
@@ -77,6 +94,12 @@ public class StringOperations{
 			source=padded;
 	}
 
+	/**
+	 * @param source 48-bit
+	 * @param membersInAGroup for displacement
+	 * @param start index
+	 * @return
+	 */
 			// this converts the 48 bits into groups of 6 each
 	public static String splitBy(String source,int membersInAGroup,int start){
 				return source.substring(start,start+membersInAGroup);

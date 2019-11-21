@@ -1,11 +1,19 @@
 package des.utils;
 
+/**
+ * Created by
+ * @author Jai Gohil
+ */
+
 public class Conversion
 {
 	static String[] Binary=new String[]{"0000","0001","0010","0011","0100","0101","0110","0111","1000","1001","1010","1011","1100","1101","1110","1111" };
-	
-	//converts the hexadeciaml key to binary format in string
-		//This all should go in conversion package
+
+	/**
+	 * @param hexstring
+	 * converts the hexadeciaml key to binary format in string
+	 * This all should go in conversion package
+	 */
 		public static String hexToBinary(String s)
 		{
 			int element;
@@ -35,12 +43,20 @@ public class Conversion
 			return output;
 		}
 
+	/**
+	 * @param decimal string
+	 * this function takes decimal string and returns it equivalent binary
+	 */
 		public static String decimalToBinary(int decimal){
 			String output="";
 				output=output+""+Binary[decimal];
 			return output;
 		}
-		// yhis function takes 4bit binary string and returns it equivalent decimal assumed that padding is done till 4-bits 
+
+	/**
+	 * @param string containing binary values
+	 * this function takes 4bit binary string and returns it equivalent decimal assumed that padding is done till 4-bits
+	 */
 		public static int binaryToDecimal(String s){
 			for(int i=0; i<16; i++){
 				if(s.equals(Binary[i]))
@@ -52,8 +68,12 @@ public class Conversion
 
 		}
 
+	/**
+	 * @param string containing binary values
+	 * this function takes binary string and returns it equivalent hexadecimal
+	 */
 		public static String binaryToHex(String s){
-			int element =binaryToDecimal(s);
+			int element = binaryToDecimal(s);
 			String result="";
 				switch(element)
 				{

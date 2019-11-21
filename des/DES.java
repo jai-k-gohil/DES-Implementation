@@ -4,6 +4,11 @@ import des.utils.StringOperations;
 import des.utils.Conversion;
 import des.utils.BitOperations;
 
+/**
+ * Created by
+ * @author Jai Gohil
+ */
+
 public class DES{
 
 	BitOperations bytes =new BitOperations();
@@ -45,7 +50,6 @@ public class DES{
 		}
 		
 //this function is to encrypt plain text
-
  		String encryptPlainText(String data,String key){
  				encryptKey(key);
 				message=Conversion.hexToBinary(data);
