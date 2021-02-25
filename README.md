@@ -1,6 +1,6 @@
-# DES-Implementation
-This contains implementation of DES encryption algorithm (Data Encryption Standard) in Java.
-This built static implementation of DES as the keys itself that are used along with the algorithm are hardcoded.
+# Vault
+It allows to secure(encrypt) provided text(string) with DES encryption algorithm (Data Encryption Standard) in Java.
+This built contains static implementation of DES keys, that are used along with the algorithm. Never the less they can be manipulated if required.
 
 To learn more about the algorithm look [here](https://en.wikipedia.org/wiki/Data_Encryption_Standard)
 
